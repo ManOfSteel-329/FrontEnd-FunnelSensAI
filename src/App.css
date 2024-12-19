@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 /* #root {
   max-width: 1280px;
   margin: 0 auto;
@@ -81,3 +82,15 @@
     }
   }
   
+=======
+/* Theme colors may be updated as needed */
+body.light {
+  background-color: #fffaf8;
+  color: #151315;
+}
+
+body.dark {
+  background-color: #151315;
+  color: #fffaf8;
+}
+>>>>>>> Stashed changes

@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
@@ -19,3 +20,17 @@ function App() {
 }
 
 export default App
+=======
+import React from 'react'
+import ThemeToggle from './components/ThemeToggle'
+import './App.css'
+
+export default function App() {
+    return (
+        <>
+            <h1>Hello World!</h1>        
+            <ThemeToggle />
+        </>
+    )
+}
+>>>>>>> Stashed changes
