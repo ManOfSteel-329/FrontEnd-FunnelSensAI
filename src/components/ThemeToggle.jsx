@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import "./ThemeToggle.css";
-import 'bootstrap/dist/css/bootstrap.min.css';
 import { Brightness7, DarkMode } from "@mui/icons-material";
 
 export default function ThemeToggle() {
@@ -25,4 +24,3 @@ export default function ThemeToggle() {
             </div>
     );
 }
-
