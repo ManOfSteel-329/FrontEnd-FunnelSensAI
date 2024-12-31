@@ -1,0 +1,24 @@
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.logo .logo-icon,
+.logo h2 {
+    padding-top: 14px;
+    font-weight: bold;
+    font-size: 14px;
+    width: 40px;
+    height: 40px;
+}
+
+.logo .logo-icon {
+    color: rgb(var(--primary));
+}
+
+@media screen and (max-width: 1300px) {
+    .logo h2 {
+        display: none;
+    }
+}
