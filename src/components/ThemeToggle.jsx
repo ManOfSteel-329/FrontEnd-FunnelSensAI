@@ -4,7 +4,7 @@ import { Brightness7, DarkMode } from "@mui/icons-material";
 
 export default function ThemeToggle() {
 
-    const [theme, setTheme] = useState('light');
+    const [theme, setTheme] = useState('dark');
 
     const toggleTheme = () => {
         setTheme(theme === 'light' ? 'dark' : 'light');
