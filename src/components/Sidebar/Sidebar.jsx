@@ -9,7 +9,7 @@ import './Sidebar.css'
 
 const Sidebar = ({open, onClose}) => {
   return (
-    <aside className={`sidebar ${open && 'card open'}`}>
+    <aside  className={`sidebar ${open && 'card open'}`}>
       <div className="top">
         <Logo />
         <div 
@@ -26,7 +26,7 @@ const Sidebar = ({open, onClose}) => {
             <a href={route.path}>
               <div 
                 className="icon"
-                style={{...perfectShape(30, 30)}}
+                style={{...perfectShape(20, 20)}}
                 data-tip={route.name}
               >
                     <route.icon />

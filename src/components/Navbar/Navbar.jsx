@@ -12,7 +12,7 @@ const Navbar = ({onMenuClick}) => {
 
   return (
     <nav className='blur navbar'>
-      <Logo />
+      {/* <Logo /> */}
       <h2 className="page-title">Page Title</h2>
       <div className={`blur search ${focus && 'active'}`}>
         <FiSearch className='search-icon' />

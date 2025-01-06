@@ -10,6 +10,10 @@
     z-index: 100;
 }
 
+.navbar .page-title {
+    margin-left: 40px;
+}
+
 .navbar .search {
     margin-left: auto;
     display: flex;
@@ -68,4 +72,33 @@
     overflow: hidden;
     border-radius: 10px;
     border: solid 2px rgb(var(--primary));
+}
+
+@media screen and (max-width: 1100px) {
+    .navbar .logo {
+        display: flex;
+    }
+    .navbar .page-title {
+        display: none;
+    }
+    .navbar .menu {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .navbar .user .user-info {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .navbar .search {
+        display: none;
+    }
+    .navbar .notification {
+        margin-left: auto;
+    }
 }

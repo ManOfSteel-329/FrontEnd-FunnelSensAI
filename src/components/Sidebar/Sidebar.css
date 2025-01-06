@@ -3,22 +3,25 @@
     justify-content: space-between;
     align-items: center;
     flex-direction: column;
-    height: 100%;
-    min-height: 100vh;
+    height: calc(100vh - 40px); /*100%;*/
+    /* min-height: 100vh; */
+    max-height: 100vh;
     width: 100%;
     max-width: 260px;
     float: left;
-    position: sticky;
-    top: 0;
+    position: fixed;
+    top: 40px;
     left: 0;
     z-index: 999;
     transition: var(--transition);
-    background-color: rgba(var(--ui-base), 0.5);
+    background-color: rgba(var(--ui-sidebar-background), 0.5);
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
 
 }
 
 .sidebar > .top {
-    padding: 20px;
+    padding: 20px 6px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -28,8 +31,8 @@
     flex: 1;
     overflow: hidden;
     overflow-y: auto;
-    padding: 20px;
-
+    padding: 10px;
+    
 }
 
 .sidebar > .middle li {
@@ -40,8 +43,8 @@
 .sidebar > .middle li a {
     display: flex;
     align-items: center;
-    gap: 10px;
-    padding: 5px 10px;
+    gap: 3px;
+    padding: 1px 10px;
     transition: var(--transition);
     border-radius: 6px;
     font-size: 16px;
@@ -54,13 +57,14 @@
         rgb(var(--primary)),
         rgb(var(--color-success))
     );
-    color: rgb(var(--color-white));
+    color: rgb(var(--text-color));
 }
 
 .sidebar > .middle li a .icon {
     display: flex;
     align-items: center;
     background: rgb(var(--ui-base));
+    /* background: red; */
     border-radius: 6px;
     color: rgb(var(--text-color));
 }
@@ -75,12 +79,12 @@
 
 @media screen and (max-width: 1300px) {
     .sidebar {
-        max-width: 80px;
-        width: 80px;
+        max-width: 50px;
+        width: 50px;
     }
     .sidebar > .middle li a {
         justify-content: center;
-        padding: 10px;
+        padding: 3px;
     } 
     .sidebar > .middle li a .text {
         display: none; 
@@ -93,9 +97,6 @@
     .user .user-info {
         display: none;
     }
-    /* .theme-toggle {
-        display: none;
-    } */
 }
 
 @media screen and (max-width: 1100px) {
@@ -137,7 +138,7 @@
     left: 60%;
     transform: translateX(-50%);
     background-color: rgba(var(--ui-base), 0.9);
-    color: rgb(var(--color-white));
+    color: rgb(var(--text-color));
     padding: 5px 10px;
     border-radius: 6px;
     white-space: nowrap;

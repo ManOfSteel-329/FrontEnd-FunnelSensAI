@@ -10,12 +10,13 @@
     --color-warning: rgb(255, 187, 86);
     --ui-base: rgb(255, 255, 255);
     --ui-secondary: rgb(241, 241, 241);
+    --ui-sidebar-background: rgb(199, 199, 199);
     --border: rgb(233, 240, 248);
     --transition:0.3s ease-in-out;
     --shadow: 0 0 45px rgba(0, 0, 0, 0.1);
 }
 :root {
-    /* CSS variables */
+    /* CSS variables for light theme */
     --primary: 243, 121, 87;     
     --text-color: 34, 34, 34;
     --text-muted: 94, 94, 95;
@@ -25,6 +26,7 @@
     --color-warning: 255, 187, 86;
     --ui-base: 255, 255, 255;
     --ui-secondary: 241, 241, 241;
+    --ui-sidebar-background: 199, 199, 199;
     --border: 233, 240, 248;
     --transition: 0.3s ease-in-out;
     --shadow: 0 0 45px rgba(0, 0, 0, 0.1);
@@ -33,6 +35,7 @@
     --text-color: 255, 255, 255;
     --ui-base:40, 40, 52;
     --ui-secondary: 19, 19, 27;
+    --ui-sidebar-background: 40, 40, 52;
     --text-muted: 152, 170, 196;
     --border: 35, 36, 37;
     --shadow: 0 0 45px rgba(28, 28, 28, 0.1);
@@ -161,9 +164,9 @@ input::placeholder {
 .card {
     border-radius: 10px;
     background: linear-gradient(
-        to too right,
-        rgba(var(--ui-base), 0.5)
-        rgb(var(--ui-base), 0.8)
+        to top right,
+        rgba(var(--ui-base), 0.5),
+        rgba(var(--ui-base), 0.8)
     );
     -webkit-backdrop-filter: blur(50px);
     backdrop-filter: blur(50px);
@@ -179,7 +182,7 @@ input::placeholder {
     position: absolute;
     width: 322px;
     height: 308px;
-    background: rgb(var(--primary), 0.5);
+    background: rgba(var(--primary), 0.5);
     background: linear-gradient(
         190deg,
         rgba(var(--primary), 0.5) 0%,

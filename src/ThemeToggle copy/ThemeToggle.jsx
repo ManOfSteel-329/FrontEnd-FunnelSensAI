@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from 'react'
 import { MdSunny } from "react-icons/md";
+import { FaMoon } from "react-icons/fa6";
 import {useMediaQuery} from 'react-responsive'
-import { PiMoonStarsFill } from 'react-icons/pi';
-import './ThemeToggle.css'
+import { perfectShape } from '../utility';
 
 const ThemeToggle = () => {
   useMediaQuery(
@@ -31,25 +31,32 @@ const ThemeToggle = () => {
     }
   }, [isDark])
 
-  const toggleTheme = () => {
-    setIsDark(!isDark)
-};
-
   return (
-    <div className='slider-container' onClick={()=>toggleTheme()}>
-      <div className={`slider-track ${isDark ? 'dark': 'light'}`}>
-        <div className="icon-container">
-          <MdSunny className='icon track-sun' />
-          <PiMoonStarsFill className='icon track-moon' />
-        </div>
-        <div className={`slider-thumb ${isDark ? 'dark': 'light'}`}>
-          {isDark ? (
-            <PiMoonStarsFill className='icon dark' />
-          ) : (
-            <MdSunny className='icon light' />
-          )}
-        </div>
+    <div className='theme-toggle'>
+      <div className='theme-text'>
+        <h5>Theme</h5>
+        <p className="muted">{isDark ? 'Dark' : 'Light'}</p>
       </div>
+      <label>
+        <input 
+          type='checkbox'
+          className='input-checkbox'
+          checked = {isDark}
+          onChange={(event)=>setIsDark(event.target.checked)}
+        />
+        <div 
+          className="sun"
+          style={{ ...perfectShape(25, 25)}}
+        >
+          <MdSunny />
+        </div>
+        <div 
+          className="moon"
+          style={{ ...perfectShape(25, 25)}}
+        >
+          <FaMoon />
+        </div>
+      </label>
     </div>
   )
 }
