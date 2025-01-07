@@ -1,3 +1,4 @@
+
 /* Theme colors may be updated as needed */
 body.light {
   background-color: #fffaf8;
@@ -8,3 +9,27 @@ body.dark {
   background-color: #151315;
   color: #fffaf8;
 }
+
+
+
+@font-face {
+  font-family: SF UI Display;
+  src: url(https://v1.fontapi.ir/css/SFUIDisplay);
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: SF UI Display, -apple-system, Roboto, Helvetica, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #fffbf8;
+  color: black;
+  min-height: 100vh;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+
+
