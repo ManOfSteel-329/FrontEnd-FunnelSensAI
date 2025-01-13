@@ -65,6 +65,7 @@
     align-items: center;
     background: rgb(var(--ui-base));
     /* background: red; */
+    background-color: rgb(var(--ui-sidebar-background));
     border-radius: 6px;
     color: rgb(var(--text-color));
 }

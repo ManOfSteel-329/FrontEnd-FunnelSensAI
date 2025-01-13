@@ -6,6 +6,7 @@ import { routes } from '../../source';
 import ThemeToggle from '../../ThemeToggle/ThemeToggle';
 import profile from '../../assets/profile.png'
 import './Sidebar.css'
+// import {Frame as IconBackground} from '../../assets/Frame.svg'
 
 const Sidebar = ({open, onClose}) => {
   return (
@@ -29,7 +30,7 @@ const Sidebar = ({open, onClose}) => {
                 style={{...perfectShape(20, 20)}}
                 data-tip={route.name}
               >
-                    <route.icon />
+                    <img src={route.icon} alt='' />
               </div>
                 <span className="text">{route.name}</span>
             </a>
