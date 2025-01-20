@@ -5,7 +5,7 @@ import './Dashboard.css'
 const Dashboard = () => {
   return (
     <Wrapper>
-        <div>Dashboard</div>
+        {/* <div>Dashboard</div> */}
     </Wrapper>
   )
 }

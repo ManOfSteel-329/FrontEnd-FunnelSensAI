@@ -1,36 +1,38 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Logo from '../Logo/Logo'
-import { IoIosCloseCircleOutline } from "react-icons/io";
 import { perfectShape } from '../../utility';
 import { routes } from '../../source';
 import ThemeToggle from '../../ThemeToggle/ThemeToggle';
-import profile from '../../assets/profile.png'
 import './Sidebar.css'
-// import {Frame as IconBackground} from '../../assets/Frame.svg'
+import IconWrapper from './IconWrapper';
 
-const Sidebar = ({open, onClose}) => {
+const Sidebar = () => {
+  const [hoveredIndex, setHoveredIndex] = useState(null)
+
   return (
-    <aside  className={`sidebar ${open && 'card open'}`}>
+    <aside  className="sidebar">
       <div className="top">
         <Logo />
-        <div 
-          className="close-btn"
-          onClick={onClose || (() => {})}
-          style={{...perfectShape(40, 40)}}
-        >
-          <IoIosCloseCircleOutline />
-        </div>
       </div>
       <ul className="middle">
         {routes.map((route, key) => (
-          <li className={`route ${key === 0 && 'active'}`} key={key}>
+          <li 
+            className={`route ${key === 0 && 'active'}`} 
+            key={key}
+            onMouseEnter={() => setHoveredIndex(key)}
+            onMouseLeave={() => setHoveredIndex(null)}
+          >
             <a href={route.path}>
               <div 
                 className="icon"
-                style={{...perfectShape(20, 20)}}
+                style={{...perfectShape(23, 23)}}
                 data-tip={route.name}
               >
-                    <img src={route.icon} alt='' />
+                <IconWrapper
+                  Icon={route.icon}
+                  HoverIcon={route.hoverIcon}
+                  isHovered={hoveredIndex === key}
+                />
               </div>
                 <span className="text">{route.name}</span>
             </a>
@@ -38,26 +40,6 @@ const Sidebar = ({open, onClose}) => {
         ))}
         <ThemeToggle className='theme-toggle' />
       </ul>
-      <div className="bottom">
-        <div className="user">
-          <div 
-            className="profile"
-            style={{...perfectShape(40, 40)}}
-          >
-            <img src={profile} alt="" />
-          </div>
-          <div className="user-info">
-            <h4 className="name">
-              Jane Doe
-            </h4>
-            <p className="account-info">
-              Administrator
-            </p>
-          </div>
-        </div>
-      </div>
-      
-       {/* <h1>Test</h1> */}
     </aside>
   )
 }

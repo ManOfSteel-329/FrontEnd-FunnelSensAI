@@ -1,50 +1,43 @@
-import { MdLibraryAddCheck } from "react-icons/md";
-import { MdOutlinePieChartOutline } from "react-icons/md";
-import { MdPeopleAlt } from "react-icons/md";
-import { FaGear } from "react-icons/fa6";
-import { FaDollarSign } from "react-icons/fa";
-import { FaRegLightbulb } from "react-icons/fa";
-import SearchIcon from '@mui/icons-material/Search';
 import SsidChartIcon from '@mui/icons-material/SsidChart';
-import ssid_chart from './assets/ssid_chart.svg'
+import LightbulbIcon from '@mui/icons-material/Lightbulb';
+import AttachMoneyIcon from '@mui/icons-material/AttachMoney';
+import PieChartOutlineIcon from '@mui/icons-material/PieChartOutline';
+import SettingsIcon from '@mui/icons-material/Settings';
 import attach_money from './assets/attach_money.svg'
 import lightbulb from './assets/lightbulb.svg'
 import pie_chart_outline from './assets/Pie_chart_outline.svg'
 import Settings from './assets/Settings.svg'
-import Group from './assets/Group.svg'
+import ssid_chart from './assets/ssid_chart.svg'
 
 export const routes = [
     {
-        name: 'Tasks',
+        name: 'Trend',
         path: '#',
-        // icon: MdLibraryAddCheck,
-        // not <SsidChartIcon /> because Sidebar.js is putting the < />
-        // icon: SsidChartIcon,  
-        icon: ssid_chart,  
+        icon: SsidChartIcon,
+        hoverIcon: ssid_chart,  
     },
     {
         name: 'Ideas',
         path: '#',
-        icon: lightbulb// FaRegLightbulb,
+        icon: LightbulbIcon,
+        hoverIcon: lightbulb
     },
     {
         name: 'Finance',
         path: '#',
-        icon: attach_money, // FaDollarSign,
+        icon: AttachMoneyIcon,
+        hoverIcon: attach_money
     },
     {
-        name: 'pie',
+        name: 'Chart',
         path: '#',
-        icon: pie_chart_outline
+        icon: PieChartOutlineIcon,
+        hoverIcon: pie_chart_outline
     },
     {
         name: 'Settings',
         path: '#',
-        icon: Settings,
+        icon: SettingsIcon,
+        hoverIcon: Settings
     },
-    {
-        name: 'Group',
-        path: '#',
-        icon: Group,
-    }
 ]
