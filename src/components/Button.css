@@ -1,0 +1,61 @@
+.btn {
+  padding: 0.625rem 1.25rem;
+  border: none;
+  border-radius: 8px;
+  font-family: inherit;
+  font-size: 0.9375rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  min-height: 42px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  white-space: nowrap;
+  min-width: fit-content;
+  color: var(--text-primary);
+}
+
+/* Primary Button */
+.btn-primary {
+  background-color: var(--highlight-primary);
+}
+
+.btn-primary:hover {
+  background-color: var(--highlight-soft);
+}
+
+/* Secondary Button */
+.btn-secondary {
+  background-color: var(--highlight-secondary);
+}
+
+.btn-secondary:hover {
+  background-color: var(--highlight-secondary-soft);
+}
+
+/* Neutral Button */
+.btn-neutral {
+  background-color: var(--neutral-primary);
+}
+
+.btn-neutral:hover {
+  background-color: var(--neutral-soft);
+}
+
+/* Special Button (Gradient) */
+.btn-special {
+  background: linear-gradient(135deg, var(--highlight-primary) 0%, var(--data-positive) 100%);
+}
+
+.btn-special:hover {
+  opacity: 0.9;
+}
+
+/* Disabled State */
+.btn:disabled {
+  background-color: var(--text-inactive);
+  color: var(--text-primary);
+  cursor: not-allowed;
+  opacity: 0.7;
+} 
