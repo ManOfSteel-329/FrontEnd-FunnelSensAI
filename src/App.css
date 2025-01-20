@@ -1,73 +1,70 @@
+:root {
+  /* Background Colors */
+  --bg-light: #FFFBF8;
+  --bg-dark: #131414;
+  
+  /* Navigation */
+  --nav-bg: #E9E5DD;
+  
+  /* Neutral Colors */
+  --neutral-primary: #E9E5DD;
+  --neutral-soft: #D6D2C8;
+  
+  /* Text Colors */
+  --text-primary: #131414;
+  --text-inactive: #B0ADA7;
+  
+  /* Accent Colors */
+  --highlight-primary: #E57358;
+  --highlight-soft: #F08A72;
+  --highlight-secondary: #DFBEF1;
+  --highlight-secondary-soft: #CBB8E2;
+  
+  /* Data Visualization */
+  --data-positive: #4CAF50;
+  --data-positive-soft: #B7DFB9;
+  --data-neutral: #FFB56B;
+  --data-neutral-soft: #FFE1C4;
+  --data-negative: #FF6B6B;
+  --data-negative-soft: #FFC4C4;
+}
 
-/* Theme colors may be updated as needed */
+/* CSS Reset */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Theme colors */
 body.light {
-  background-color: #fffaf8;
-  color: #151315;
+  background-color: var(--bg-light);
+  color: var(--text-primary);
 }
 
 body.dark {
-  background-color: #151315;
-  color: #fffaf8;
+  background-color: var(--bg-dark);
+  color: var(--bg-light);
 }
 
-
-
+/* Font Configuration */
 @font-face {
-  font-family: SF UI Display;
+  font-family: 'SF UI Display';
   src: url(https://v1.fontapi.ir/css/SFUIDisplay);
+  font-display: swap;
 }
 
+/* Base Styles */
 body {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: SF UI Display, -apple-system, Roboto, Helvetica, sans-serif;
+  font-family: 'SF UI Display', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #fffbf8;
-  color: black;
   min-height: 100vh;
   width: 100%;
   overflow-x: hidden;
-}
-
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+  line-height: 1.5;
 }
 
 
