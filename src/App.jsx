@@ -1,25 +1,20 @@
-import React from 'react'
+import React, { useState } from 'react'
 import ThemeToggle from './components/ThemeToggle'
+import SignIn from './pages/SignIn'
 import Button from './components/Button'
 import './App.css'
 
 export default function App() {
+    const [isSignInOpen, setIsSignInOpen] = useState(false);
+
     return (
-        <div style={{ padding: '2rem' }}>
+        <div>
             <ThemeToggle />
-            <div style={{ 
-                marginTop: '2rem', 
-                display: 'flex', 
-                gap: '1rem', 
-                flexDirection: 'column',
-                alignItems: 'flex-start'
-            }}>
-                <Button variant="primary">Primary Button</Button>
-                <Button variant="secondary">Secondary Button</Button>
-                <Button variant="neutral">Neutral Button</Button>
-                <Button variant="special">Special Button</Button>
-                <Button variant="primary" disabled>Disabled Button</Button>
-            </div>
+            <Button onClick={() => setIsSignInOpen(true)}>Open Sign In</Button>
+            <SignIn 
+                isOpen={isSignInOpen} 
+                onClose={() => setIsSignInOpen(false)} 
+            />
         </div>
     )
 }
