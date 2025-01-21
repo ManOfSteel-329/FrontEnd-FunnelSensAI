@@ -76,7 +76,7 @@ const SignIn = ({ isOpen, onClose }) => {
             </a>
           </div>
 
-          <Button type="submit" variant="primary" className="signin-button">
+          <Button type="submit" className="btn-primary">
             Sign In
           </Button>
         </form>

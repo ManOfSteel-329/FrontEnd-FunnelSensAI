@@ -10,7 +10,7 @@ export default function App() {
     return (
         <div>
             <ThemeToggle />
-            <Button onClick={() => setIsSignInOpen(true)}>Open Sign In</Button>
+            <Button className="btn-primary" onClick={() => setIsSignInOpen(true)}>Open Sign In</Button>
             <SignIn 
                 isOpen={isSignInOpen} 
                 onClose={() => setIsSignInOpen(false)} 
