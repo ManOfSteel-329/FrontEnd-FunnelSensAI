@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import Button from '../components/Button';
 import Input from '../components/Input';
 import './SignIn.css';
+import logo from '../assets/logo.svg';
 
 const SignIn = ({ isOpen, onClose }) => {
   const [formData, setFormData] = useState({
@@ -32,7 +33,7 @@ const SignIn = ({ isOpen, onClose }) => {
         <button className="close-button" onClick={onClose}>×</button>
         
         <div className="logo-container">
-          <img src="/logo.png" alt="Logo" className="logo" />
+          <img src={logo} alt="Logo" className="logo" />
         </div>
 
         <h1>Welcome back</h1>
