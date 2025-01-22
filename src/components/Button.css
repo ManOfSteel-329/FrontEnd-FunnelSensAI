@@ -50,6 +50,7 @@
 .btn-neutral:active {
   background-color: var(--neutral-soft) !important;
   border-color: var(--neutral-soft) !important;
+  color: var(--text-primary) !important;
 }
 
 /* Focus states with variant-specific shadows */
@@ -86,6 +87,7 @@
 .btn-gradient:hover,
 .btn-gradient.active {
   opacity: 0.9;
+  color: var(--text-primary) !important;
 }
 
 .btn-gradient.focus {
@@ -118,6 +120,7 @@
 .btn-primary.active {
   background-color: #D65B42 !important; /* Darker shade of highlight-primary */
   border-color: #D65B42 !important;
+  color: var(--text-primary) !important;
 }
 
 /* Secondary Button Active State */
@@ -125,6 +128,7 @@
 .btn-secondary.active {
   background-color: #C5A5D8 !important; /* Darker shade of highlight-secondary */
   border-color: #C5A5D8 !important;
+  color: var(--text-primary) !important;
 }
 
 /* Neutral Button Active State */
