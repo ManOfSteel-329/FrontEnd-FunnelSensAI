@@ -7,18 +7,18 @@
   --nav-bg: #E9E5DD;
   
   /* Neutral Colors */
-  --neutral: #E9E5DD;
-  --neutral-soft: #D6D2C8;
+  --btn-neutral: #E9E5DD;
+  --btn-neutral-soft: #D6D2C8;
   
   /* Text Colors */
   --text-primary: #131414;
   --text-inactive: #B0ADA7;
   
   /* Accent Colors */
-  --primary: #E57358;
-  --primary-soft: #F08A72;
-  --secondary: #DFBEF1;
-  --secondary-soft: #CBB8E2;
+  --btn-primary: #E57358;
+  --btn-primary-soft: #F08A72;
+  --btn-secondary: #DFBEF1;
+  --btn-secondary-soft: #CBB8E2;
   
   /* Data Visualization */
   --data-positive: #4CAF50;

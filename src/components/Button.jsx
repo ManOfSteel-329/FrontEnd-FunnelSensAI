@@ -7,7 +7,8 @@ const Button = ({
   disabled = false,
   onClick,
   type = 'button',
-  className = ''
+  className = '',
+  'aria-label': ariaLabel
 }) => {
   const [isPressed, setIsPressed] = useState(false);
   const buttonRef = useRef(null);
@@ -56,6 +57,7 @@ const Button = ({
       onClick={handleClick}
       data-bs-toggle="button"
       aria-pressed={isPressed}
+      aria-label={ariaLabel}
     >
       {children}
     </button>
@@ -67,7 +69,8 @@ Button.propTypes = {
   disabled: PropTypes.bool,
   onClick: PropTypes.func,
   type: PropTypes.oneOf(['button', 'submit', 'reset']),
-  className: PropTypes.string
+  className: PropTypes.string,
+  'aria-label': PropTypes.string
 };
 
 export default Button;
