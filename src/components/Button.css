@@ -50,7 +50,7 @@
 } 
 
 .btn-neutral:disabled {
-  background-color: var(--neutral-soft);
+  background-color: var(--btn-neutral-soft);
 }
 
 /* Special gradient button - only custom variant needed */
