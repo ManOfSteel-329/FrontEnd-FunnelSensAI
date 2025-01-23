@@ -27,8 +27,7 @@ const Button = ({
     // Remove active state from all other buttons
     document.querySelectorAll('.btn').forEach(btn => {
       if (btn !== buttonRef.current) {
-        btn.classList.remove('active', 'focus');
-        // Also reset their pressed state if they're Button components
+        // reset their pressed state if they're Button components
         btn._buttonInstance?.setPressed?.(false);
       }
     });
@@ -46,7 +45,7 @@ const Button = ({
     }
   }, []);
 
-  const activeClasses = isPressed ? 'active focus' : '';
+  const activeClasses = isPressed;
 
   return (
     <button

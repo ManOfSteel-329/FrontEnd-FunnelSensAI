@@ -2,138 +2,70 @@
 .btn {
   font-family: inherit;
   font-weight: 500;
-  transition: all 0.2s ease-in-out;
+  color: var(--text-primary) !important;
+  border: none;
 }
 
 /* Primary Button */
 .btn-primary {
-  font-weight: 500;
-  color: var(--text-primary);
-  padding: 0.625rem 1.25rem;
-  background-color: var(--highlight-primary);
-  border-color: var(--highlight-primary);
+  background-color: var(--primary);
 }
 
-.btn-primary:hover,
+.btn-primary:hover {
+  background-color: var(--primary-soft);
+}
+
 .btn-primary:active {
-  background-color: var(--highlight-soft) !important;
-  border-color: var(--highlight-soft) !important;
-  color: var(--text-primary);
+  background-color: #D65B42 !important; /* Darker shade of highlight-primary */
+}
+
+.btn-primary:disabled {
+  background-color: var(--primary-soft);
 }
 
 /* Secondary Button */
 .btn-secondary {
-  font-weight: 500;
-  color: var(--text-primary);
-  padding: 0.625rem 1.25rem;
-  background-color: var(--highlight-secondary);
-  border-color: var(--highlight-secondary);
+  background-color: var(--secondary);
 }
 
-.btn-secondary:hover,
+.btn-secondary:hover {
+  background-color: var(--secondary-soft) !important;
+}
+
 .btn-secondary:active {
-  background-color: var(--highlight-secondary-soft) !important;
-  border-color: var(--highlight-secondary-soft) !important;
-  color: var(--text-primary);
+  background-color: #C5A5D8 !important; /* Darker shade of highlight-secondary */
 }
 
 /* Neutral Button (Custom) */
 .btn-neutral {
-  font-weight: 500;
-  color: var(--text-primary);
-  padding: 0.625rem 1.25rem;
-  background-color: var(--neutral-primary);
-  border-color: var(--neutral-primary);
+  background-color: var(--neutral);
 }
 
-.btn-neutral:hover,
-.btn-neutral:active {
+.btn-neutral:hover {
   background-color: var(--neutral-soft) !important;
-  border-color: var(--neutral-soft) !important;
-  color: var(--text-primary) !important;
 }
 
-/* Focus states with variant-specific shadows */
-.btn-primary.focus {
-  box-shadow: 0 0 0 0.2rem rgba(229, 115, 88, 0.25); /* lighter highlight-primary */
-}
+.btn-neutral:active {
+  background-color: #C2BEB5 !important; /* Darker shade of neutral-primary */
+} 
 
-.btn-secondary.focus {
-  box-shadow: 0 0 0 0.2rem rgba(223, 190, 241, 0.25); /* lighter highlight-secondary */
-}
-
-.btn-light.focus {
-  box-shadow: 0 0 0 0.2rem rgba(233, 229, 221, 0.25); /* lighter neutral-primary */
-}
-
-.btn-neutral.focus {
-  box-shadow: 0 0 0 0.2rem rgba(214, 210, 200, 0.25); /* lighter neutral-soft */
-}
-
-/* Maintain text color in active state */
-.btn.active {
-  color: var(--text-primary) !important;
+.btn-neutral:disabled {
+  background-color: var(--neutral-soft);
 }
 
 /* Special gradient button - only custom variant needed */
 .btn-gradient {
-  font-weight: 500;
   background-image: url('../assets/Frame.svg');
   background-size: cover;
-  padding: 0.625rem 1.25rem;
-  border: none;
+  background-position: center;
 }
 
-.btn-gradient:hover,
-.btn-gradient.active {
-  opacity: 0.9;
-  color: var(--text-primary) !important;
+.btn-gradient:hover{
+  opacity: .9;
 }
 
-.btn-gradient.focus {
-  box-shadow: 0 0 0 0.2rem rgba(223, 190, 241, 0.25), /* lighter DFBEF1 */
-              0 0 0 0.2rem rgba(209, 91, 46, 0.25),   /* lighter D15B2E */
-              0 0 0 0.2rem rgba(13, 103, 43, 0.25);   /* lighter 0D672B */
+.btn-gradient:active{
+  opacity: 1;
 }
 
-/* Size variants */
-.btn-sm {
-  padding: 0.4rem 1rem;
-  font-size: 0.875rem;
-}
 
-.btn-lg {
-  padding: 0.75rem 1.5rem;
-  font-size: 1rem;
-}
-
-/* Disabled state */
-.btn:disabled {
-  background-color: var(--text-inactive);
-  border-color: var(--text-inactive);
-  opacity: 0.7;
-  cursor: not-allowed;
-}
-
-/* Primary Button Active State */
-.btn-primary:active,
-.btn-primary.active {
-  background-color: #D65B42 !important; /* Darker shade of highlight-primary */
-  border-color: #D65B42 !important;
-  color: var(--text-primary) !important;
-}
-
-/* Secondary Button Active State */
-.btn-secondary:active,
-.btn-secondary.active {
-  background-color: #C5A5D8 !important; /* Darker shade of highlight-secondary */
-  border-color: #C5A5D8 !important;
-  color: var(--text-primary) !important;
-}
-
-/* Neutral Button Active State */
-.btn-neutral:active,
-.btn-neutral.active {
-  background-color: #C2BEB5 !important; /* Darker shade of neutral-primary */
-  border-color: #C2BEB5 !important;
-} 

@@ -7,7 +7,7 @@
   --nav-bg: #E9E5DD;
   
   /* Neutral Colors */
-  --neutral-primary: #E9E5DD;
+  --neutral: #E9E5DD;
   --neutral-soft: #D6D2C8;
   
   /* Text Colors */
@@ -15,10 +15,10 @@
   --text-inactive: #B0ADA7;
   
   /* Accent Colors */
-  --highlight-primary: #E57358;
-  --highlight-soft: #F08A72;
-  --highlight-secondary: #DFBEF1;
-  --highlight-secondary-soft: #CBB8E2;
+  --primary: #E57358;
+  --primary-soft: #F08A72;
+  --secondary: #DFBEF1;
+  --secondary-soft: #CBB8E2;
   
   /* Data Visualization */
   --data-positive: #4CAF50;
