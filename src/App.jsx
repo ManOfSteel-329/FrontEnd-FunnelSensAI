@@ -13,7 +13,6 @@ export default function App() {
                 gridTemplateColumns: 'repeat(3, 1fr)',
                 gap: '2rem'
             }}>
-                {/* Column 1 - Small Buttons */}
                 <div style={{ display: 'flex', flexDirection: 'column', gap: '1rem', alignItems: 'flex-start' }}>
                     <h3>Small</h3>
                     <Button className="btn-primary btn-sm">Primary Button</Button>
@@ -26,7 +25,6 @@ export default function App() {
                     <Button className="btn-gradient btn-sm" disabled>Special Button</Button>
                 </div>
 
-                {/* Column 2 - Medium Buttons */}
                 <div style={{ display: 'flex', flexDirection: 'column', gap: '1rem', alignItems: 'flex-start' }}>
                     <h3>Medium</h3>
                     <Button className="btn-primary">Primary Button</Button>
@@ -39,7 +37,6 @@ export default function App() {
                     <Button className="btn-gradient" disabled>Special Button</Button>
                 </div>
 
-                {/* Column 3 - Large Buttons */}
                 <div style={{ display: 'flex', flexDirection: 'column', gap: '1rem', alignItems: 'flex-start' }}>
                     <h3>Large</h3>
                     <Button className="btn-primary btn-lg">Primary Button</Button>

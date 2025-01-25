@@ -25,10 +25,8 @@ const Button = ({
   }, []);
 
   const handleClick = (e) => {
-    // Remove active state from all other buttons
     document.querySelectorAll('.btn').forEach(btn => {
       if (btn !== buttonRef.current) {
-        // reset their pressed state if they're Button components
         btn._buttonInstance?.setPressed?.(false);
       }
     });
@@ -38,8 +36,6 @@ const Button = ({
       onClick(e);
     }
   };
-
-  // Store the setPressed function on the button element
   useEffect(() => {
     if (buttonRef.current) {
       buttonRef.current._buttonInstance = { setPressed: setIsPressed };

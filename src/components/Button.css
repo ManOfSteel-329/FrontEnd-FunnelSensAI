@@ -1,12 +1,10 @@
-/* Base button styles - only essential customization */
+
 .btn {
   font-family: inherit;
   font-weight: 500;
   color: var(--text-primary) !important;
   border: none;
 }
-
-/* Primary Button */
 .btn-primary {
   background-color: var(--btn-primary);
 }
@@ -16,14 +14,12 @@
 }
 
 .btn-primary:active {
-  background-color: #D65B42 !important; /* Darker shade of highlight-primary */
+  background-color: #D65B42 !important; 
 }
 
 .btn-primary:disabled {
   background-color: var(--btn-primary-soft);
 }
-
-/* Secondary Button */
 .btn-secondary {
   background-color: var(--btn-secondary);
 }
@@ -33,10 +29,8 @@
 }
 
 .btn-secondary:active {
-  background-color: #C5A5D8 !important; /* Darker shade of highlight-secondary */
+  background-color: #C5A5D8 !important; 
 }
-
-/* Neutral Button (Custom) */
 .btn-neutral {
   background-color: var(--btn-neutral);
 }
@@ -52,15 +46,13 @@
 .btn-neutral:disabled {
   background-color: var(--btn-neutral-soft);
 }
-
-/* Special gradient button - only custom variant needed */
 .btn-gradient {
   position: relative;
   background-image: url('../assets/Frame.svg');
   background-size: cover;
   background-position: center;
-  border-radius: 0.375rem; /* Bootstrap's default border-radius */
-  overflow: hidden; /* Keeps overlay within border-radius */
+  border-radius: 0.375rem; 
+  overflow: hidden; 
 }
 
 .btn-gradient::after {
@@ -80,5 +72,5 @@
 
 .btn-gradient:active::after,
 .btn-gradient.active::after {
-  background-color: rgba(0, 0, 0, 0.2); /* Dark overlay when active */
+  background-color: rgba(0, 0, 0, 0.2);
 }

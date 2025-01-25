@@ -1,26 +1,20 @@
 :root {
-  /* Background Colors */
   --bg-light: #FFFBF8;
   --bg-dark: #131414;
   
-  /* Navigation */
   --nav-bg: #E9E5DD;
   
-  /* Neutral Colors */
   --btn-neutral: #E9E5DD;
   --btn-neutral-soft: #D6D2C8;
   
-  /* Text Colors */
   --text-primary: #131414;
   --text-inactive: #B0ADA7;
   
-  /* Accent Colors */
   --btn-primary: #E57358;
   --btn-primary-soft: #F08A72;
   --btn-secondary: #DFBEF1;
   --btn-secondary-soft: #CBB8E2;
   
-  /* Data Visualization */
   --data-positive: #4CAF50;
   --data-positive-soft: #B7DFB9;
   --data-neutral: #FFB56B;
@@ -29,7 +23,6 @@
   --data-negative-soft: #FFC4C4;
 }
 
-/* CSS Reset */
 *,
 *::before,
 *::after {
@@ -38,7 +31,6 @@
   padding: 0;
 }
 
-/* Theme colors */
 body.light {
   background-color: var(--bg-light);
   color: var(--text-primary);
@@ -49,14 +41,12 @@ body.dark {
   color: var(--bg-light);
 }
 
-/* Font Configuration */
 @font-face {
   font-family: 'SF UI Display';
   src: url(https://v1.fontapi.ir/css/SFUIDisplay);
   font-display: swap;
 }
 
-/* Base Styles */
 body {
   font-family: 'SF UI Display', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
