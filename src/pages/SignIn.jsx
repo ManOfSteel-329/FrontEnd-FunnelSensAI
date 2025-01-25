@@ -30,7 +30,7 @@ const SignIn = ({ isOpen, onClose }) => {
   return (
     <div className="modal-overlay" onClick={onClose}>
       <div className="signin-card" onClick={e => e.stopPropagation()}>
-        <button className="close-button" onClick={onClose}>×</button>
+        <button className="close-button" onClick={onClose} aria-label="Close"></button>
         
         <div className="logo-container">
           <img src={logo} alt="Logo" className="logo" />
@@ -65,6 +65,7 @@ const SignIn = ({ isOpen, onClose }) => {
           <div className="form-options">
             <label className="remember-me">
               <input
+                className="form-check-input"
                 type="checkbox"
                 name="rememberMe"
                 checked={formData.rememberMe}

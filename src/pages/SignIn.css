@@ -26,7 +26,7 @@
   border-radius: 16px;
   padding: 2rem;
   width: 100%;
-  max-width: 400px;
+  max-width: 500px;
   position: relative;
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
   animation: modalFadeIn 0.3s ease-out;
@@ -47,11 +47,12 @@
   position: absolute;
   top: 1rem;
   right: 1rem;
-  background: none;
+  background: url('../assets/close-icon.svg') center/contain no-repeat;
   border: none;
-  font-size: 1.5rem;
+  width: 56px;
+  height: 56px;
   cursor: pointer;
-  color: var(--text-inactive);
+  padding: 0;
 }
 
 .logo-container {
@@ -83,12 +84,12 @@ h1 {
   display: flex;
   flex-direction: column;
   gap: 1.25rem;
+  align-items: center;
 }
 
+/* Keep input wrapper full width but let button be natural width */
 .form-group {
-  display: flex;
-  flex-direction: column;
-  gap: 0.5rem;
+  width: 100%;
 }
 
 .form-group label {
@@ -100,6 +101,8 @@ h1 {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  width: 100%;
+  margin: 0.5rem 0;
 }
 
 .remember-me {
@@ -108,17 +111,14 @@ h1 {
   gap: 0.5rem;
   color: var(--text-primary);
   cursor: pointer;
+  margin-left: 10px;
 }
 
 .forgot-password {
   color: var(--text-primary);
   text-decoration: underline;
   font-weight: 500;
-}
-
-.signin-button {
-  width: 100%;
-  margin-top: 1rem;
+  margin-left: auto;
 }
 
 .register-prompt {
@@ -132,3 +132,22 @@ h1 {
   text-decoration: underline;
   font-weight: 500;
 } 
+
+.remember-me input[type="checkbox"]:checked {
+  background-color: var(--btn-primary) !important;
+}
+
+/* Custom checkbox styling */
+
+.form-check-input {
+  cursor: pointer;
+  border: none;
+  border-radius: 0.1rem !important;
+}
+
+.form-check-input:checked {
+  background-color: var(--btn-primary);
+}
+.form-check-input:focus {
+  box-shadow: none;
+}
