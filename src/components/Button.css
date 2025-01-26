@@ -1,4 +1,3 @@
-
 .btn {
   font-family: inherit;
   font-weight: 500;
@@ -9,23 +8,22 @@
   background-color: var(--btn-primary);
 }
 
-.btn-primary:hover {
-  background-color: var(--btn-primary-soft);
+.btn-primary:hover,
+.btn-primary:disabled {
+  background-color: var(--btn-primary-hover);
 }
 
 .btn-primary:active {
   background-color: #D65B42 !important; 
 }
 
-.btn-primary:disabled {
-  background-color: var(--btn-primary-soft);
-}
 .btn-secondary {
   background-color: var(--btn-secondary);
 }
 
-.btn-secondary:hover {
-  background-color: var(--btn-secondary-soft);
+.btn-secondary:hover,
+.btn-secondary:disabled {
+  background-color: var(--btn-secondary-hover);
 }
 
 .btn-secondary:active {
@@ -35,35 +33,35 @@
   background-color: var(--btn-neutral);
 }
 
-.btn-neutral:hover {
-  background-color: var(--btn-neutral-soft);
+.btn-neutral:hover,
+.btn-neutral:disabled {
+  background-color: var(--btn-neutral-hover);
 }
 
 .btn-neutral:active {
-  background-color: #C2BEB5 !important; /* Darker shade of neutral-primary */
+  background-color: #C2BEB5 !important; 
 } 
 
-.btn-neutral:disabled {
-  background-color: var(--btn-neutral-soft);
-}
 .btn-gradient {
   position: relative;
   background-image: url('../assets/Frame.svg');
   background-size: cover;
   background-position: center;
-  border-radius: 0.375rem; 
-  overflow: hidden; 
+  overflow: hidden;
+}
+
+.btn-gradient span {
+  position: relative;
+  z-index: 2;
 }
 
 .btn-gradient::after {
   content: '';
   position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
+  inset: 0;
   background-color: rgba(255, 255, 255, 0);
   transition: background-color 0.2s ease;
+  z-index: 1;
 }
 
 .btn-gradient:hover::after {
