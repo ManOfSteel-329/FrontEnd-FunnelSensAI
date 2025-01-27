@@ -14,7 +14,7 @@
 }
 
 .btn-primary:active {
-  background-color: #D65B42 !important; 
+  background-color: var(--btn-primary-active) !important; 
 }
 
 .btn-secondary {
@@ -27,7 +27,7 @@
 }
 
 .btn-secondary:active {
-  background-color: #C5A5D8 !important; 
+  background-color: var(--btn-secondary-active) !important; 
 }
 .btn-neutral {
   background-color: var(--btn-neutral);
@@ -39,7 +39,7 @@
 }
 
 .btn-neutral:active {
-  background-color: #C2BEB5 !important; 
+  background-color: var(--btn-neutral-active) !important; 
 } 
 
 .btn-gradient {
@@ -59,16 +59,16 @@
   content: '';
   position: absolute;
   inset: 0;
-  background-color: rgba(255, 255, 255, 0);
+  background-color: #FFFFFF00;
   transition: background-color 0.2s ease;
   z-index: 1;
 }
 
 .btn-gradient:hover::after {
-  background-color: rgba(255, 255, 255, 0.1);
+  background-color: #FFFFFF1A;
 }
 
 .btn-gradient:active::after,
 .btn-gradient.active::after {
-  background-color: rgba(0, 0, 0, 0.2);
+  background-color: #00000033;
 }
