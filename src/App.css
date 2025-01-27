@@ -1,35 +1,35 @@
 :root {
-  /* Background Colors */
   --bg-light: #FFFBF8;
   --bg-dark: #131414;
   
-  /* Navigation */
   --nav-bg: #E9E5DD;
   
-  /* Neutral Colors */
-  --neutral-primary: #E9E5DD;
-  --neutral-soft: #D6D2C8;
+  --btn-neutral: #E9E5DD;
+  --btn-neutral-hover: #D6D2C8;
+  --btn-neutral-active: #C2BEB5;
   
-  /* Text Colors */
   --text-primary: #131414;
   --text-inactive: #B0ADA7;
   
-  /* Accent Colors */
-  --highlight-primary: #E57358;
-  --highlight-soft: #F08A72;
-  --highlight-secondary: #DFBEF1;
-  --highlight-secondary-soft: #CBB8E2;
+  --btn-primary: #E57358;
+  --btn-primary-hover: #F08A72;
+  --btn-primary-active: #D65B42;
+  --btn-secondary: #DFBEF1;
+  --btn-secondary-hover: #CBB8E2;
+  --btn-secondary-active: #C5A5D8;
   
-  /* Data Visualization */
   --data-positive: #4CAF50;
   --data-positive-soft: #B7DFB9;
   --data-neutral: #FFB56B;
   --data-neutral-soft: #FFE1C4;
   --data-negative: #FF6B6B;
   --data-negative-soft: #FFC4C4;
+  
+  --gradient-overlay: #FFFFFF00;
+  --gradient-overlay-hover: #FFFFFF1A;
+  --gradient-overlay-active: #00000033;
 }
 
-/* CSS Reset */
 *,
 *::before,
 *::after {
@@ -38,7 +38,6 @@
   padding: 0;
 }
 
-/* Theme colors */
 body.light {
   background-color: var(--bg-light);
   color: var(--text-primary);
@@ -49,14 +48,12 @@ body.dark {
   color: var(--bg-light);
 }
 
-/* Font Configuration */
 @font-face {
   font-family: 'SF UI Display';
   src: url(https://v1.fontapi.ir/css/SFUIDisplay);
   font-display: swap;
 }
 
-/* Base Styles */
 body {
   font-family: 'SF UI Display', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
