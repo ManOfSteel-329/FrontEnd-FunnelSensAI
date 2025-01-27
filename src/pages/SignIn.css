@@ -22,7 +22,7 @@
 }
 
 .signin-card {
-  background: var(--btn-secondary-soft);
+  background: var(--btn-secondary-hover);
   border-radius: 16px;
   padding: 2rem;
   width: 100%;
