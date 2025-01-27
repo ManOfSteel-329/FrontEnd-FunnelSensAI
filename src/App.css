@@ -24,6 +24,10 @@
   --data-neutral-soft: #FFE1C4;
   --data-negative: #FF6B6B;
   --data-negative-soft: #FFC4C4;
+  
+  --gradient-overlay: #FFFFFF00;
+  --gradient-overlay-hover: #FFFFFF1A;
+  --gradient-overlay-active: #00000033;
 }
 
 *,

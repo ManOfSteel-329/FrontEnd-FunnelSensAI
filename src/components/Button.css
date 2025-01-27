@@ -59,16 +59,16 @@
   content: '';
   position: absolute;
   inset: 0;
-  background-color: #FFFFFF00;
+  background-color: var(--gradient-overlay);
   transition: background-color 0.2s ease;
   z-index: 1;
 }
 
 .btn-gradient:hover::after {
-  background-color: #FFFFFF1A;
+  background-color: var(--gradient-overlay-hover);
 }
 
 .btn-gradient:active::after,
 .btn-gradient.active::after {
-  background-color: #00000033;
+  background-color: var(--gradient-overlay-active);
 }
