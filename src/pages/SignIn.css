@@ -23,12 +23,14 @@
 
 .signin-card {
   background: var(--btn-secondary-hover);
+  background-image: url('../assets/Blob 2.svg');
+  background-position: center;
+  background-size: cover;
   border-radius: 16px;
   padding: 2rem;
   width: 100%;
   max-width: 500px;
   position: relative;
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
   animation: modalFadeIn 0.3s ease-out;
 }
 

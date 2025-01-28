@@ -1,45 +1,18 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 import './Input.css';
 
-const Input = ({
-  type = 'text',
-  placeholder,
-  value,
-  onChange,
-  error,
-  disabled = false,
-  className = '',
-  name,
-  required = false
-}) => {
+export default function Input({ className = '', isValid, isInvalid, errorMessage, ...props }) {
   return (
-    <div className="input-wrapper">
+    <div className="form-group">
       <input
-        type={type}
-        className={`input ${error ? 'input-error' : ''} ${className}`}
-        placeholder={placeholder}
-        value={value}
-        onChange={onChange}
-        disabled={disabled}
-        name={name}
-        required={required}
+        className={`form-control ${isInvalid ? 'is-invalid' : ''} ${isValid ? 'is-valid' : ''} ${className}`}
+        {...props}
       />
-      {error && <span className="input-error-message">{error}</span>}
+      {isInvalid && errorMessage && (
+        <div className="invalid-feedback">
+          {errorMessage}
+        </div>
+      )}
     </div>
   );
-};
-
-Input.propTypes = {
-  type: PropTypes.string,
-  placeholder: PropTypes.string,
-  value: PropTypes.string,
-  onChange: PropTypes.func,
-  error: PropTypes.string,
-  disabled: PropTypes.bool,
-  className: PropTypes.string,
-  name: PropTypes.string,
-  required: PropTypes.bool
-};
-
-export default Input; 
+} 

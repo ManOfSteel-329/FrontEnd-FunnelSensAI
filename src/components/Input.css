@@ -1,58 +1,12 @@
-.input-wrapper {
-  position: relative;
-  width: 100%;
-}
-
 .input {
-  width: 100%;
-  padding: 0.75rem 1rem;
-  border: 1px solid var(--neutral-soft);
-  border-radius: 8px;
   font-family: inherit;
-  font-size: 0.9375rem;
-  line-height: 1.5;
   color: var(--text-primary);
   background-color: var(--bg-light);
   transition: all 0.2s ease-in-out;
 }
 
-.input::placeholder {
-  color: var(--text-inactive);
-}
 
-.input:focus {
-  outline: none;
-  border-color: var(--highlight-secondary);
-  box-shadow: 0 0 0 2px var(--highlight-secondary-soft);
-}
-
-.input:disabled {
-  background-color: var(--neutral-soft);
-  cursor: not-allowed;
-  opacity: 0.7;
-}
-
-.input-error {
-  border-color: var(--data-negative);
-}
-
-.input-error:focus {
-  box-shadow: 0 0 0 2px var(--data-negative-soft);
-}
-
-.input-error-message {
-  position: absolute;
-  bottom: -1.25rem;
-  left: 0;
-  font-size: 0.75rem;
-  color: var(--data-negative);
-}
-
-/* Dark theme support */
-body.dark .input {
-  border-color: var(--text-inactive);
-}
-
-body.dark .input::placeholder {
-  color: var(--text-inactive);
+.form-control:focus {
+  border-color: var(--btn-secondary-active);
+  box-shadow: 0 0 0 0.15rem var(--btn-neutral);
 } 
