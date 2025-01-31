@@ -1,11 +1,26 @@
-/* Track Styles */
+
+.toggle-track,
+.toggle-circle {
+  position: relative;
+  border-radius: 50px;
+}
+
+.toggle-circle,
+.toggle-circle svg {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.toggle-track,
+.toggle-circle {
+  transition: all 0.3s ease;
+}
+
 .toggle-track {
   width: 30px;
   height: 60px;
-  border-radius: 50px;
-  position: relative;
   cursor: pointer;
-  transition: background-color 0.3s ease;
 }
 
 .toggle-track.light {
@@ -16,19 +31,10 @@
   background-color: #626262;
 }
 
-/* Circle Styles */
+
 .toggle-circle {
   width: 26px;
   height: 26px;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: absolute;
-  top: 2px;
-  left: 2px;
-  transition: transform 0.3s ease;
-  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
 }
 
 .toggle-circle.light {
@@ -41,7 +47,6 @@
   background-color: #131414;
 }
 
-/* Icons Inside the Circle */
 .toggle-circle svg {
   width: 16px;
   height: 16px;

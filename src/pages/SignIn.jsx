@@ -19,9 +19,6 @@ const SignIn = ({ isOpen, onClose }) => {
   const handleChange = (e) => {
     const { name, value, type, checked } = e.target;
     const newValue = type === 'checkbox' ? checked : value;
-    
-    console.log(`Email input value: ${name === 'email' ? value : formData.email}`);
-    
     setFormData(prev => ({
       ...prev,
       [name]: newValue
@@ -30,8 +27,7 @@ const SignIn = ({ isOpen, onClose }) => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Handle sign in logic here
-    console.log('Form submitted:', formData);
+    setFormData(prev => ({ ...prev }));
   };
 
   if (!isOpen) return null;

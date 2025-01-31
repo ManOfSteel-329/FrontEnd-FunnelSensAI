@@ -38,15 +38,13 @@
   padding: 0;
 }
 
-body.light {
-  background-color: var(--bg-light);
+body.light,
+body.dark {
   color: var(--text-primary);
 }
 
-body.dark {
-  background-color: var(--bg-dark);
-  color: var(--bg-light);
-}
+body.light { background-color: var(--bg-light); }
+body.dark { background-color: var(--bg-dark); }
 
 @font-face {
   font-family: 'SF UI Display';
