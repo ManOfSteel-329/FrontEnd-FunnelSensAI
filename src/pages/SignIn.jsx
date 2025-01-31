@@ -11,11 +11,20 @@ const SignIn = ({ isOpen, onClose }) => {
     rememberMe: false
   });
 
+  const validateEmail = (email) => {
+    const emailRegex = /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i;
+    return emailRegex.test(email);
+  };
+
   const handleChange = (e) => {
     const { name, value, type, checked } = e.target;
+    const newValue = type === 'checkbox' ? checked : value;
+    
+    console.log(`Email input value: ${name === 'email' ? value : formData.email}`);
+    
     setFormData(prev => ({
       ...prev,
-      [name]: type === 'checkbox' ? checked : value
+      [name]: newValue
     }));
   };
 
@@ -48,6 +57,8 @@ const SignIn = ({ isOpen, onClose }) => {
               placeholder="Enter your email"
               value={formData.email}
               onChange={handleChange}
+              isInvalid={formData.email.length > 0 && !validateEmail(formData.email)}
+              errorMessage="Please enter a valid email address"
             />
           </div>
 
