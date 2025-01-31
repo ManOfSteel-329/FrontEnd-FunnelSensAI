@@ -1,13 +1,10 @@
-import Dashboard from './Dashboard'
+import React from 'react'
+import './App.css'
 
-function App() {
-  return (
-    <div>
-        {/* <h1 style={{color:'white'}}>Test</h1> */}
-      <Dashboard />
-    </div>
-
-  )
+export default function App() {
+    return (
+        <div className="container">
+            {}
+        </div>
+    )
 }
-
-export default App

@@ -1,0 +1,74 @@
+.btn {
+  font-family: inherit;
+  font-weight: 500;
+  color: var(--text-primary) !important;
+  border: none;
+}
+.btn-primary {
+  background-color: var(--btn-primary);
+}
+
+.btn-primary:hover,
+.btn-primary:disabled {
+  background-color: var(--btn-primary-hover);
+}
+
+.btn-primary:active {
+  background-color: var(--btn-primary-active) !important; 
+}
+
+.btn-secondary {
+  background-color: var(--btn-secondary);
+}
+
+.btn-secondary:hover,
+.btn-secondary:disabled {
+  background-color: var(--btn-secondary-hover);
+}
+
+.btn-secondary:active {
+  background-color: var(--btn-secondary-active) !important; 
+}
+.btn-neutral {
+  background-color: var(--btn-neutral);
+}
+
+.btn-neutral:hover,
+.btn-neutral:disabled {
+  background-color: var(--btn-neutral-hover);
+}
+
+.btn-neutral:active {
+  background-color: var(--btn-neutral-active) !important; 
+} 
+
+.btn-gradient {
+  position: relative;
+  background-image: url('../assets/Frame.svg');
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+}
+
+.btn-gradient span {
+  position: relative;
+  z-index: 2;
+}
+
+.btn-gradient::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-color: var(--gradient-overlay);
+  transition: background-color 0.2s ease;
+  z-index: 1;
+}
+
+.btn-gradient:hover::after {
+  background-color: var(--gradient-overlay-hover);
+}
+
+.btn-gradient:active::after,
+.btn-gradient.active::after {
+  background-color: var(--gradient-overlay-active);
+}
