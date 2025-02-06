@@ -1,0 +1,164 @@
+
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  padding: 1rem;
+}
+
+.signin-container,
+.modal-overlay {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.signin-container {
+  min-height: 100vh;
+  background-color: var(--bg-light);
+  padding: 1rem;
+}
+
+.logo-container,
+h1,
+.subtitle,
+.register-prompt {
+  text-align: center;
+}
+
+h1,
+.subtitle,
+.form-group label,
+.remember-me,
+.forgot-password,
+.register-prompt,
+.register-link {
+  color: var(--text-primary);
+}
+
+h1,
+.form-group label,
+.forgot-password,
+.register-link {
+  font-weight: 500;
+}
+
+.signin-card {
+  background: var(--btn-secondary-hover);
+  background-image: url('../assets/Blob 2.svg');
+  background-position: center;
+  background-size: cover;
+  border-radius: 16px;
+  padding: 2rem;
+  width: 100%;
+  max-width: 500px;
+  position: relative;
+  animation: modalFadeIn 0.3s ease-out;
+}
+
+@keyframes modalFadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.close-button {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background: url('../assets/close-icon.svg') center/contain no-repeat;
+  border: none;
+  width: 56px;
+  height: 56px;
+  cursor: pointer;
+  padding: 0;
+}
+
+.logo-container {
+  margin-bottom: 1.5rem;
+}
+
+.logo {
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+}
+
+h1 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.subtitle {
+  margin-bottom: 2rem;
+}
+
+.signin-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  align-items: center;
+}
+
+.form-group {
+  width: 100%;
+}
+
+.form-group label {
+  font-weight: 500;
+}
+
+.form-options {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin: 0.5rem 0;
+}
+
+.remember-me {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+.forgot-password {
+  text-decoration: underline;
+  margin-left: auto;
+}
+
+.register-prompt {
+  margin-top: 1.5rem;
+}
+
+.register-link {
+  text-decoration: underline;
+}
+
+.remember-me input[type="checkbox"]:checked {
+  background-color: var(--btn-primary) !important;
+}
+
+.form-check-input {
+  cursor: pointer;
+  border: none;
+  border-radius: 0.1rem !important;
+}
+
+.form-check-input:checked {
+  background-color: var(--btn-primary);
+}
+.form-check-input:focus {
+  box-shadow: none;
+}
