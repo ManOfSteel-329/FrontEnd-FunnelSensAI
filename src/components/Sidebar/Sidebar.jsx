@@ -4,11 +4,9 @@ import logo from "../../assets/Logo.svg";
 import ThemeToggle from '../../ThemeToggle/ThemeToggle';
 import "bootstrap/dist/css/bootstrap.min.css";
 import './Sidebar.css'
-import ssid_chart from '../../assets/ssid_chart.svg'
 
 
 const Sidebar = () => {
-//   const [hoveredIndex, setHoveredIndex] = useState(null)
 
   const [expanded, setExpanded] = useState(false);
   const [activeSection, setActiveSection] = useState("");
