@@ -1,10 +1,9 @@
 import React, { useState, useEffect } from 'react'
 import { Navbar, Nav } from "react-bootstrap"
 import logo from "../../assets/Logo.svg";
-import ThemeToggle from '../../ThemeToggle/ThemeToggle';
+import ThemeToggle from '../ThemeToggle/ThemeToggle';
 import "bootstrap/dist/css/bootstrap.min.css";
 import './Sidebar.css'
-
 
 const Sidebar = () => {
 

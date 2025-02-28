@@ -1,9 +1,11 @@
 import "bootstrap/dist/css/bootstrap.min.css";
-import React from 'react'
+import { React, useState } from 'react'
 import './App.css'
 import SideBar from './components/Sidebar/Sidebar'
 
 export default function App() {
+    const [isSignInOpen, setIsSignInOpen] = useState(false);
+
     return (
         <div className="app-container">
       <SideBar />

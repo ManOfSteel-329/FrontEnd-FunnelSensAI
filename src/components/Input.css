@@ -1,0 +1,46 @@
+.input {
+  font-family: inherit;
+  color: var(--text-primary);
+  background-color: var(--bg-light);
+  transition: all 0.2s ease-in-out;
+}
+
+input[type="password"], 
+input[type="text"],
+.form-control {
+  padding-right: 40px;
+}
+
+.form-control:focus {
+  border-color: var(--btn-secondary-active);
+  box-shadow: 0 0 0 0.15rem var(--btn-neutral);
+}
+
+.input-wrapper,
+.password-toggle {
+  display: flex;
+  align-items: center;
+}
+
+.input-wrapper {
+  position: relative;
+}
+
+.password-toggle {
+  position: absolute;
+  right: 10px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  color: var(--text-inactive);
+}
+
+.password-toggle:hover,
+.password-toggle:focus {
+  color: var(--text-primary);
+}
+
+.password-toggle:focus {
+  outline: none;
+} 

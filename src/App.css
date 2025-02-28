@@ -1,32 +1,32 @@
 :root {
-  --bg-light: #fffbf8;
+  --bg-light: #FFFBF8;
   --bg-dark: #131414;
   
-  --nav-bg: #e9e5dd;
+  --nav-bg: #E9E5DD;
   
-  --btn-neutral: #e9e5dd;
-  --btn-neutral-hover: #d6d2c8;
-  --btn-neutral-active: #c2beb5;
+  --btn-neutral: #E9E5DD;
+  --btn-neutral-hover: #D6D2C8;
+  --btn-neutral-active: ##C2BEB5;
   
   --text-primary: #131414;
-  --text-inactive: #b0ada7;
+  --text-inactive: #B0ADA7;
   
-  --btn-primary: #e57358;
-  --btn-primary-hover: #f08a72;
-  --btn-primary-active: #d65b42;
-  --btn-secondary: #dfbef1;
-  --btn-secondary-hover: #cbb8e2;
-  --btn-secondary-active: #c5a5d8;
+  --btn-primary: ##E57358;
+  --btn-primary-hover: #F08A72;
+  --btn-primary-active: #D65B42;
+  --btn-secondary: #DFBEF1;
+  --btn-secondary-hover: #CBB8E2;
+  --btn-secondary-active: #C5A5D8;
   
-  --data-positive: #4caf50;
-  --data-positive-soft: #b7dfb9;
-  --data-neutral: #ffb56b;
-  --data-neutral-soft: #ffe1c4;
-  --data-negative: #ff6b6b;
-  --data-negative-soft: #ffc4c4;
+  --data-positive: #4CAF50;
+  --data-positive-soft: ##B7DFB9;
+  --data-neutral: #FFB56B;
+  --data-neutral-soft: #FFE1C4;
+  --data-negative: #FF6B6B;
+  --data-negative-soft: #FFC4C4;
   
-  --gradient-overlay: #ffffff00;
-  --gradient-overlay-hover: #ffffff1a;
+  --gradient-overlay: #FFFFFF00;
+  --gradient-overlay-hover: #FFFFFF1A;
   --gradient-overlay-active: #00000033;
 }
 
@@ -43,12 +43,12 @@
   margin: 0;
   padding: 0;
 }
-  
+
 body.light {
   background-color: var(--bg-light);
   color: var(--text-primary);
 }
-  
+
 body.dark {
   background-color: var(--bg-dark);
   color: var(--bg-light);
